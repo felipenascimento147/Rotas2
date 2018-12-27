@@ -14,6 +14,7 @@ export class AlunosDeactivateGuard implements CanDeactivate<AlunosFormComponent>
   ): Observable<boolean> | Promise<boolean> | boolean {
     //console.log('Deu certo');
     return true;
+    // Comentario
   }
 }
 
