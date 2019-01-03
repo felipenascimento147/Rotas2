@@ -10,9 +10,9 @@ import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-encontrado.component';
 
 const cursosRoutes: Routes = [
-  { path: 'cursos', component: CursosComponent, canActivate: [AuthGuard]},
-  { path: 'curso/:id', component: CursoDetalheComponent, canActivate: [AuthGuard] },
-  { path: 'naoEncontrado', component: CursoNaoEncontradoComponent, canActivate: [AuthGuard]}
+  { path: 'cursos', component: CursosComponent, canActivate: [AuthGuard], canLoad: [AuthGuard]},
+  { path: 'curso/:id', component: CursoDetalheComponent, canActivate: [AuthGuard], canLoad: [AuthGuard] },
+  { path: 'naoEncontrado', component: CursoNaoEncontradoComponent, canActivate: [AuthGuard], canLoad: [AuthGuard]}
 ];
 
 @NgModule({

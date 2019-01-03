@@ -15,6 +15,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { AlunosModule } from './alunos/alunos.module';
 import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AuthGuard } from './guards/auth.guard';
     HomeComponent,
     //CursosComponent,
     LoginComponent,
+    PaginaNaoEncontradaComponent,
     //CursoDetalheComponent,
     //CursoNaoEncontradoComponent
   ],
